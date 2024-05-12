@@ -30,7 +30,7 @@ public class SmsProvider {
         Message message = new Message();
         message.setFrom(FROM_NUMBER);
         message.setTo(to);
-        message.setText("안녕하세요1\n안녕하세요2\n하이3\n헬로4\n반가워5");
+        message.setText("Test1\nTestt2\nTesttt3\nTestttt4\nTesttttt5");
 
         // 메세지 전송
         SingleMessageSentResponse response = messageService.sendOne(new SingleMessageSendingRequest(message));

@@ -17,6 +17,7 @@ public class TestController {
     
     private final TestService testService;
     
+    // to 자리에 메세지 전송할 번호 입력
     @PostMapping("/send-sms/{to}")
     public ResponseEntity<String> sendSms (
         @PathVariable("to") String to
